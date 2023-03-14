@@ -5,7 +5,7 @@ import Inputform from './components/Input.jsx';
 
 function App() {
   const idValue = Math.random();
-  // console.log(idValue);
+  
 
   const[value,setValue] = useState('');
   const [tasks,setTasks] = useState([]);
@@ -19,8 +19,7 @@ function App() {
       text:value,
       status: false,
      }
-     setTasks([...tasks,newEntry]);
-    //  tasks.forEach((task)=>console.log(task.id));
+     setTasks([...tasks,newEntry]);    
      setValue('');
     }
    }
